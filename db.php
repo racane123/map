@@ -6,8 +6,8 @@ $db_name = 'if0_35435943_gis';
 $username = 'if0_35435943';
 $password = 'YETZXocfNE';
 $port = '3306';
-
 */
+
 
 $server = 'localhost';
 $db_name = 'gis';

@@ -20,14 +20,14 @@ $query = $dbconn->query($add_query);
 // Check if the query was successful
 if ($query) {
     // Return a valid JSON response
-    header('Content-Type: application/json');
+    //header('Content-Type: application/json');
     echo json_encode(array("statusCode" => 200));
-    exit;
+   // exit;
 } else {
     // Return a valid JSON response
-    header('Content-Type: application/json');
+   // header('Content-Type: application/json');
     echo json_encode(array("statusCode" => 201));
-    exit;
+   // exit;
 }
 
 // Close the database connection

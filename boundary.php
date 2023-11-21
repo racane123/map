@@ -10,8 +10,8 @@ $databaseConfig = [
    'db_name' => 'if0_35435943_gis',
    'port' =>'3306',
 ];
-
 */
+
 
 // Set up your database connection
 $databaseConfig = [
@@ -44,7 +44,7 @@ header('Access-Control-Allow-Methods: GET'); // Adjust as needed
 //header('Access-Control-Allow-Headers: Content-Type'); // Adjust as needed
 
 //$clicked = 'POLYGON((13473773.037832 1659717.0409431,13473805.045836 1659717.518674,13473805.58329 1659676.9712194,13473772.918401 1659676.9115039,13473773.037832 1659717.0409431))';
-$clicked2 = 'POLYGON((13473759.631493 1659701.2907342,13473765.364269 1659701.5893163,13473765.782286 1659696.8717187,13473759.810641 1659696.8717187,13473759.631493 1659701.2907342))';
+//$clicked2 = 'POLYGON((13473759.631493 1659701.2907342,13473765.364269 1659701.5893163,13473765.782286 1659696.8717187,13473759.810641 1659696.8717187,13473759.631493 1659701.2907342))';
 
 
 // Define the API endpoint
@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         ST_GeomFromText('$clicked2'), geom"  ;
 */
    
-    $query = "SELECT type, name, ST_AsGeoJSON(geom) as geometry, feature_id  FROM featuredrawn";
+   $query = "SELECT type, name, ST_AsGeoJSON(geom) AS geometry FROM featuredrawn WHERE type = 'Boundary';";
     $result = $dbconn->query($query);
 
     if (!$result) {
@@ -81,7 +81,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             'properties' => [
                 'type' => $row['type'],
                 'name' => $row['name'],
-                'feature_id' => $row['feature_id']
             ],
         ];
         $features[] = $feature;
