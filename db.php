@@ -13,7 +13,7 @@ $server = 'localhost';
 $db_name = 'gis';
 $username = 'root';
 $password = '';
-$port = '3390';
+$port = '3306';
 
 
 // Create connection

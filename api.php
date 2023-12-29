@@ -19,7 +19,7 @@ $databaseConfig = [
     'user' => 'root',
     'password' =>'',
    'db_name' => 'gis',
-   'port' =>'3390',
+   'port' =>'3306',
 ];
 
 
