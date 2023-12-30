@@ -51,7 +51,7 @@ include_once '../header.php';
     <h4>GIS</h4>
     <ul class="nav flex-column p-1 m-2">
       <li class="nav-item">
-        <a class="nav-link active" href="#">HOME</a>
+        <a class="nav-link active" href="../">HOME</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">BUSINESS PERMIT</a>

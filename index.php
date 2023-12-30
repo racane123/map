@@ -52,23 +52,12 @@
 </head>
 <body>
     <!--navbar-->
-    
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          
-          <i class="fa-solid fa-map"></i> GIS MAP
-        </a>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="admin/dashboard.php">
-              <i class="fas fa-home"></i> Dashboard
-            </a>
-            
-          </li>
-        </ul>
-      </div>
-    </nav>
+<?php
+
+include('navbar.php');
+?>    
+
+
 
 
     
