@@ -1,0 +1,34 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+aside {
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
+
+.content {
+  margin-left: 220px; /* Adjusted to accommodate the aside width + some margin */
+  padding: 16px;
+}
+
+
+.logo-brand{
+    height: 130px;
+    width: 200px;
+    bottom: 50px;
+}
+
+#aside-padding{
+    top: 50px;  
+}
+
+.aside-bg{
+    background-color: #13265C;
+}
